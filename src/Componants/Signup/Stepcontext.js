@@ -3,12 +3,16 @@ import Signup from './Signup';
 
 export const multiStepContext = React.createContext();
 const Stepcontext = () => {
-    const [currentStep, setStep] = useState(3)
-    const [candidatedata, setCandidatedata] = useState([]);
+    const [currentStep, setStep] = useState(1)
+    const [userData, setUserData] = useState([]);
     const [finalData, setFinalData] = useState([]);
+
+    const submitData = () => {
+
+    }
     return (
         <div>
-            <multiStepContext.Provider value={{ currentStep, setStep, candidatedata, setCandidatedata, finalData, setFinalData }}>
+            <multiStepContext.Provider value={{ currentStep, setStep, userData, setUserData, finalData, setFinalData, submitData }}>
                 <Signup />
             </multiStepContext.Provider>
 
