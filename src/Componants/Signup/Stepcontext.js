@@ -3,7 +3,7 @@ import Signup from './Signup';
 
 export const multiStepContext = React.createContext();
 const Stepcontext = () => {
-    const [currentStep, setStep] = useState(2)
+    const [currentStep, setStep] = useState(3)
     const [candidatedata, setCandidatedata] = useState([]);
     const [finalData, setFinalData] = useState([]);
     return (

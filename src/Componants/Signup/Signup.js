@@ -21,11 +21,11 @@ const Signup = () => {
         }
     }
     return (
-        <div className='lg:flex justify-evenly'>
+        <div className='lg:flex md:flex justify-evenly'>
             <div>
                 <img className='w-[100%]' src={Photo} alt="" />
             </div>
-            <div className='shadow-lg h-[90vh] pl-10 lg:pl-32'>
+            <div className='shadow-lg h-[90vh] pl-10 lg:pl-32 lg:pr-8'>
                 <h2 className='signhead text-center'>SignUp Form</h2>
                 <div className='mt-[100px]'>
                     {showStep(currentStep)}
