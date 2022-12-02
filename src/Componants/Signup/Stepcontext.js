@@ -20,9 +20,8 @@ const Stepcontext = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (data.sucessss === "user added suceesfully") {
-                    navigate('/login')
-                }
+                alert('User Sign Up Successfull, Please log in!!')
+                navigate('/')
             });
     }
     return (

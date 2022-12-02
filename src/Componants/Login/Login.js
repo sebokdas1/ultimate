@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Photo from '../Signup/photo.png';
+import Photo from '../../Images/photo.png';
 
 const Login = () => {
     const [userData, setUserData] = useState([])

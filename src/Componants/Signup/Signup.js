@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import FirstStep from './FirstStep';
-import Photo from './photo.png';
+import Photo from '../../Images/photo.png';
 import SecondStep from './SecondStep';
 import ThirdStep from './ThirdStep';
 import './Signup.css';
