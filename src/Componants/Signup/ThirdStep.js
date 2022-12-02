@@ -1,10 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { multiStepContext } from './Stepcontext';
 
 const ThirdStep = () => {
     const { setStep, userData, setUserData, submitData } = useContext(multiStepContext)
-    // const { pass, setPass } = useState('')
-
     return (
         <div>
             <input type="password" placeholder='Write Password' name='password' value={userData["password"]} onChange={(e) => setUserData({ ...userData, "password": e.target.value })} />

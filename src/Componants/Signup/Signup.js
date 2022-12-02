@@ -6,7 +6,7 @@ import ThirdStep from './ThirdStep';
 import './Signup.css';
 import { multiStepContext } from './Stepcontext';
 const Signup = () => {
-    const { currentStep, finalData } = useContext(multiStepContext)
+    const { currentStep } = useContext(multiStepContext)
     function showStep(step) {
         switch (step) {
             case 1:
