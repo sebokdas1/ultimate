@@ -9,6 +9,8 @@ const Stepcontext = () => {
 
     const submitData = () => {
 
+        console.log(userData)
+        setUserData('')
     }
     return (
         <div>

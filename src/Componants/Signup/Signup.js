@@ -31,6 +31,7 @@ const Signup = () => {
                     {showStep(currentStep)}
                 </div>
             </div>
+
         </div>
     );
 };

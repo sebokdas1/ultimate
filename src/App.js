@@ -7,15 +7,16 @@ import Stepcontext from './Componants/Signup/Stepcontext';
 
 function App() {
   return (
-    <div className="mx-[56px]">
+    <div className="lg:mx-[56px]">
       <Navbar />
       <Routes>
-        <Route path='/' element={
+        <Route path='signup' element={
           <Stepcontext>
             <Signup />
           </Stepcontext>
         }></Route>
         <Route path='login' element={<Login />}></Route>
+        {/* <Route path='login' element={<Login />}></Route> */}
       </Routes>
     </div>
   );
