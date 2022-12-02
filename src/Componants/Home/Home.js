@@ -14,7 +14,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setUserData(data))
     }, [])
-    console.log(userData)
 
     return (
         <div>
@@ -24,7 +23,7 @@ const Home = () => {
 
             <div className='mt-[79px] mx-auto w-[90%]'>
                 <div className="">
-                    <table className="table-fixed  w-full">
+                    <table className="table table-compact w-full">
                         <thead className='bg-white'>
                             <tr >
                                 <th className='text-start'>Date</th>
@@ -35,43 +34,35 @@ const Home = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>1/11/22</td>
                                 <td>{userData[2]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-01"]?.status}</td>
                             </tr>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>2/11/22</td>
                                 <td className='mt-2 text-[#222730]'>{userData[4]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-02"]?.status}</td>
                             </tr>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>8/11/22</td>
                                 <td className='mt-2 text-[#222730]'>{userData[5]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-08"]?.status}</td>
                             </tr>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>28/11/22</td>
                                 <td className='mt-2 text-[#222730]'>{userData[8]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-28"]?.status}</td>
                             </tr>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>11/11/22</td>
                                 <td className='mt-2 text-[#222730]'>{userData[10]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-11"]?.status}</td>
                             </tr>
                             <tr>
-                                {/* <td>{userData[2]?.attendance ? .(2022 - 11 - 01).date()}</td> */}
-                                <td></td>
+                                <td>30/11/22</td>
                                 <td className='mt-2 text-[#222730]'>{userData[11]?.name}</td>
-                                {/* <td>{Object?.values(userData[2]?.attendance['holiday'])}</td> */}
+                                <td>{userData[2]?.attendance["2022-11-30"]?.status}</td>
                             </tr>
-
-
                         </tbody>
                     </table>
                 </div>
