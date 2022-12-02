@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Photo from '../Signup/photo.png';
 
 const Login = () => {
     const [userData, setUserData] = useState([])
+    const navigate = useNavigate()
 
     const submitData = () => {
-        console.log(userData)
+        // console.log(userData)
+        fetch(' https://test.nexisltd.com/login', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data?.access_token) {
+                    localStorage.setItem('accessToken', data?.access_token)
+                    navigate('/')
+                }
+            });
     }
     return (
         <div className='lg:flex md:flex justify-evenly'>

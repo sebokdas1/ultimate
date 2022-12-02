@@ -8,7 +8,7 @@ const SecondStep = () => {
         <div>
             <div className='flex gap-3'>
                 <input disabled type="number" className='w-[20%] ' placeholder='+880' />
-                <input type="number" placeholder='1XXXXXXXXXX' name='phone' value={userData["phone"]} onChange={(e) => setUserData({ ...userData, "phone": e.target.value })} />
+                <input type="number" placeholder='1XXXXXXXXXX' name='phone_Number' value={userData["phone_Number"]} onChange={(e) => setUserData({ ...userData, "phone_Number": e.target.value })} />
             </div>
             <input className='mt-[64px]' type="email" placeholder='Write Email Address' name='email' value={userData["email"]} onChange={(e) => setUserData({ ...userData, "email": e.target.value })} />
 

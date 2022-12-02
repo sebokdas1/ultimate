@@ -9,8 +9,22 @@ const Stepcontext = () => {
 
     const submitData = () => {
 
-        console.log(userData)
-        setUserData('')
+        // console.log(userData)
+        fetch('https://test.nexisltd.com/signup', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert(`Your Order is Placed`)
+                }
+
+            });
+        // setUserData('')
     }
     return (
         <div>
